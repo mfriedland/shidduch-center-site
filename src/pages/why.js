@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled, { css } from 'styled-components'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -7,7 +8,7 @@ import SEO from "../components/seo"
 const Why = () => (
   <Layout>
     <SEO title="Page two" />
-    <h1>Why?</h1>
+    <Header>Why?</Header>
     <p>
       To parents, singles, and shadchanim: we personally feel the pain of the shidduch crisis, we’re involved because we have a child in the parsha or we believe this is an avodas kodesh, and we’re doing something about it because we know something must be done.
     </p>
@@ -25,5 +26,11 @@ const Why = () => (
     </p>
   </Layout>
 )
+
+const Header = styled.div`
+  font-size: 2rem;
+  color: #FF0083;
+  margin-bottom: 2rem;
+`
 
 export default Why

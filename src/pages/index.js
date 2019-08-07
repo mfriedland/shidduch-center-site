@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import styled, { css } from 'styled-components'
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
@@ -11,14 +10,11 @@ const IndexPage = () => (
     <SEO title="Home" />
       <Container>
         <Logo>New York Shidduch Center</Logo>
-        <Title>Forget Everything You</Title>
-        <Title>Know About Shidduchim</Title>
+        <Title>Forget Everything You Know About Shidduchim</Title>
         <Text>Shadchanim who care. Programs curated for you. Helping you find your bashert.</Text>
         {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}> */}
-          {/* <Image /> */}
         <Link to="/get-involved"><Button>Get Involved</Button></Link>
       {/* </div> */}
-      {/* <Link to="/page-2/">Go to page 2</Link> */}
     </Container>
   </Layout>
 )
@@ -41,6 +37,8 @@ const Title = styled.div`
   font-family: Georgia;
   color: #4A4A4A;
   margin-bottom: 4rem;
+  text-wrap: wrap;
+  line-height: 1.4;
 `
 const Text = styled.div`
   font-size: 1.25rem;
