@@ -1,6 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -26,8 +25,4 @@ const Header = styled.div`
   font-size: 2rem;
   color: #FF0083;
   margin-bottom: 2rem;
-`
-const Bold = styled.div`
-  font-weight: bold;
-  color: #FF0083;
 `
